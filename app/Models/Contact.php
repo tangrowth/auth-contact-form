@@ -13,6 +13,6 @@ class Contact extends Model
 
     public function category()
     {
-        return $this->belongsTo(Contact::class);
+        return $this->belongsTo(Category::class);
     }
 }

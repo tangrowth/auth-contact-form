@@ -60,11 +60,13 @@ class ContactController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * 管理画面を表示
      */
-    public function show(Contact $contact)
+    public function admin()
     {
-        //
+        $contacts = Contact::paginate(10);
+        $categories = Category::all();
+        return view('admin', compact('contacts', 'categories'));
     }
 
     /**

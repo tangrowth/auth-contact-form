@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ContactController::class, 'index'])->name('index');
 Route::post('/confirm', [ContactController::class, 'confirm'])->name('confirm');
 Route::post('/thanks', [ContactController::class, 'store'])->name('store');
+
+/**
+ * 後で認証済みユーザーのみ表示が出来るようにする
+ */
+Route::get('/admin', [ContactController::class, 'admin'])->name('admin');
