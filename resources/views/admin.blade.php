@@ -99,7 +99,7 @@
       <td>{{ $contact['detail'] }}</td>
     </tr>
   </table>
-  <form action="">
+  <form action="{{ route('destroy') }}" method="post">
     @csrf
     <input type="hidden" name="id" value="{{ $contact->id }}">
     <button>削除</button>

@@ -22,3 +22,4 @@ Route::post('/thanks', [ContactController::class, 'store'])->name('store');
  * 後で認証済みユーザーのみ表示が出来るようにする
  */
 Route::get('/admin', [ContactController::class, 'admin'])->name('admin');
+Route::post('/admin/destroy', [ContactController::class, 'destroy'])->name('destroy');
