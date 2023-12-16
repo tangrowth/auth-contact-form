@@ -6,7 +6,7 @@
 <table>
   <tr>
     <th>お名前</th>
-    <td>{{ $form['first_name'] }} {{ $form['last_name'] }}</td>
+    <td>{{ $form['last_name'] }} {{ $form['first_name'] }}</td>
   </tr>
 
   <tr>
