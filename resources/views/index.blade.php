@@ -7,8 +7,8 @@
   <div class="form-group">
     <label>お名前 <span>*</span></label>
     <div class="form-group-name">
-      <input type="text" name="first_name" placeholder="例: 山田" value="{{ old('first_name') }}">
-      <input type="text" name="last_name" placeholder="例: 太郎" value="{{ old('last_name') }}">
+      <input type="text" name="last_name" placeholder="例: 山田" value="{{ old('last_name') }}">
+      <input type="text" name="first_name" placeholder="例: 太郎" value="{{ old('first_name') }}">
     </div>
     @error('first_name')
     <p class="text-danger">{{ $message }}</p>
