@@ -19,7 +19,7 @@ return new class extends Migration
             $table->tinyInteger('gender');
             $table->string('email');
             $table->string('tell');
-            $table->string('adress');
+            $table->string('address');
             $table->string('building')->nullable();
             $table->text('detail');
             $table->timestamps();
